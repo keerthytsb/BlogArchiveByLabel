@@ -34,7 +34,7 @@ function LoadDetails(TotalFeed) {
 
 function DisplayPosts(PostTitles, PostURLs, PostLabels) {
  var NumberOfEntries = PostTitles.length;
- document.write('<ul class="mbtlist">');
+ document.write('<ul class="recent-posts-container">');
  for (var EntryNum = 0; EntryNum < NumberOfEntries; EntryNum++) {
 	 document.write('<li><a href ="' + PostURLs[EntryNum] + '">' + PostTitles[EntryNum] + "</a> | <span>"+PostLabels[EntryNum]+"</span></li>");
  }
